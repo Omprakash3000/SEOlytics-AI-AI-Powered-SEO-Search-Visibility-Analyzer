@@ -126,6 +126,62 @@ export default function SettingsModal({ isOpen, onClose }) {
             )}
           </div>
 
+          {/* Developer & Project Profile */}
+          <div className="p-3.5 rounded-xl bg-gradient-to-r from-brand-950/40 via-slate-950/60 to-purple-950/40 border border-brand-500/30 light:bg-slate-50 light:border-slate-200">
+            <div className="flex items-center justify-between mb-2">
+              <span className="font-bold text-white light:text-slate-900 flex items-center gap-1.5">
+                <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Developer Profile
+              </span>
+              <span className="text-[10px] uppercase font-bold text-brand-400 bg-brand-500/10 px-2 py-0.5 rounded-full border border-brand-500/20">
+                Author
+              </span>
+            </div>
+            
+            <div className="flex items-center justify-between gap-3 pt-1">
+              <div className="flex items-center gap-2.5">
+                <img
+                  src="https://github.com/Omprakash3000.png"
+                  alt="Omprakash"
+                  className="h-9 w-9 rounded-xl ring-2 ring-brand-500/40 object-cover shadow"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.style.display = 'none';
+                  }}
+                />
+                <div>
+                  <div className="font-bold text-white light:text-slate-900 text-xs">
+                    Omprakash
+                  </div>
+                  <div className="text-[11px] text-slate-400 font-mono">
+                    @Omprakash3000
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <a
+                  href="https://github.com/Omprakash3000"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 px-2.5 py-1.5 text-[11px] font-semibold text-white transition flex items-center gap-1.5 light:bg-slate-200 light:text-slate-800 light:border-slate-300"
+                >
+                  <span>Profile</span>
+                  <svg className="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <a
+                  href="https://github.com/Omprakash3000/SEOlytics-AI-AI-Powered-SEO-Search-Visibility-Analyzer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg bg-brand-600 hover:bg-brand-500 px-2.5 py-1.5 text-[11px] font-bold text-white transition flex items-center gap-1.5 shadow"
+                >
+                  <span>Repository</span>
+                  <svg className="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
           {/* Security note */}
           <div className="flex items-start gap-2 p-2.5 rounded-xl bg-slate-950/30 border border-slate-800/60 text-[11px] text-slate-400">
             <Shield className="h-4 w-4 text-emerald-400 shrink-0 mt-0.5" />

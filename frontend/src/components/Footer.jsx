@@ -21,20 +21,34 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex items-center gap-6 text-xs">
+          <div className="flex items-center gap-6 text-xs flex-wrap justify-center">
             <span className="flex items-center gap-1 text-emerald-400">
               <ShieldCheck className="h-4 w-4" /> SSRF Protected Engine
             </span>
             <span className="flex items-center gap-1 text-indigo-400">
               <Sparkles className="h-4 w-4" /> 100+ SEO & Schema Audits
             </span>
-            <span className="text-slate-500">
-              Deterministic 0–100 Real Scoring
-            </span>
+            <a
+              href="https://github.com/Omprakash3000"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-slate-300 hover:text-white transition font-medium light:text-slate-700 light:hover:text-black"
+            >
+              <img
+                src="https://github.com/Omprakash3000.png"
+                alt="Omprakash"
+                className="h-4 w-4 rounded-full ring-1 ring-brand-500/40 object-cover"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.style.display = 'none';
+                }}
+              />
+              <span>Created by <strong className="text-white light:text-slate-900">@Omprakash3000</strong></span>
+            </a>
           </div>
 
           <div className="text-xs text-slate-500 text-center md:text-right">
-            © {new Date().getFullYear()} SEOlytics AI. Production Full-Stack Architecture.
+            © {new Date().getFullYear()} SEOlytics AI. Open Source on <a href="https://github.com/Omprakash3000/SEOlytics-AI-AI-Powered-SEO-Search-Visibility-Analyzer" target="_blank" rel="noopener noreferrer" className="text-brand-400 hover:underline">GitHub</a>.
           </div>
 
         </div>
