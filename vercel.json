@@ -8,7 +8,7 @@
       "root": "backend",
       "framework": "fastapi",
       "runtime": "python",
-      "entrypoint": "backend/main.py"
+      "entrypoint": "main.py"
     }
   },
   "rewrites": [
