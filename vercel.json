@@ -10,7 +10,7 @@
   "entrypoint": "backend/main.py"
 }
 }
-    }
+    
   },
   "rewrites": [
     {
