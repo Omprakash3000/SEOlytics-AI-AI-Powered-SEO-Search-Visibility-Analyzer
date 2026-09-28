@@ -4,11 +4,12 @@
       "root": "frontend",
       "framework": "vite"
     },
-    "backend": {
-      "root": "backend",
-      "framework": "fastapi",
-      "runtime": "python",
-      "entrypoint": "main.py"
+   "backend": {
+  "root": "backend",
+  "framework": "fastapi",
+  "runtime": "python",
+  "entrypoint": "backend/main.py"
+}
     }
   },
   "rewrites": [
