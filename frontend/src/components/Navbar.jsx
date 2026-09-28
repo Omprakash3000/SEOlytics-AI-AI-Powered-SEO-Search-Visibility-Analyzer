@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Sun, Moon, Zap, Layers, RefreshCw, FileText, Settings as SettingsIcon } from 'lucide-react';
+import { Sparkles, Sun, Moon, Zap, RefreshCw, FileText, Settings as SettingsIcon } from 'lucide-react';
 
 export default function Navbar({
   theme,
@@ -72,9 +72,6 @@ export default function Navbar({
             <Zap className={`h-3.5 w-3.5 ${isDemo ? 'text-amber-400 fill-amber-400' : ''}`} />
             <span>{isDemo ? 'DEMO MODE' : 'Demo Mode'}</span>
           </button>
-
-          {/* GitHub Profile */}
-    
 
           {/* Settings */}
           <button

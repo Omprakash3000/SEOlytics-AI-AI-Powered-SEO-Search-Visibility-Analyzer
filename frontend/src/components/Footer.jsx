@@ -1,5 +1,4 @@
-import React from 'react';
-import { ShieldCheck, Zap, Sparkles, Heart } from 'lucide-react';
+import { ShieldCheck, Sparkles } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -28,9 +27,7 @@ export default function Footer() {
             <span className="flex items-center gap-1 text-indigo-400">
               <Sparkles className="h-4 w-4" /> 100+ SEO & Schema Audits
             </span>
-      
           </div>
-
 
         </div>
       </div>
